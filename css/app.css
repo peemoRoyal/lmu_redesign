@@ -1,9 +1,104 @@
-.content-grid {
-  max-width: 960px;
+/* --------------- General ---------------*/
+body {
+    font-family: Verdana;
 }
-.mdl-cell--6-col {
+h2 {
+    font-size: 20px;
+}
+
+a {
+    color: rgba(0, 148, 64, 1);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:visited {
+    background-color: rgba(127, 127, 127, 1);;
+}
+/*Align Menu Right*/
+.mdl-layout__drawer-button, .mdl-layout__drawer, .close-window-button{
+      left: initial;
+      right: 0;
+  }
+
+  .mdl-layout__drawer{
+      transform:translateX(250px);
+  }
+  .lmu-max-width {
+  max-width: 1100px;
+  margin: auto;
+}
+
+
+/*Color*/
+.color-dark-green {
+    background-color: rgba(0, 148, 64, 1);;
+}
+.color-dark-grey {
+    background-color: rgba(127, 127, 127, 1);;
+}
+.color-light-grey {
+    background-color: rgba(192, 192, 192, 1);;
+}
+
+/*Home*/
+.mdl-cell {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.cell-header{
+    color:#fff;
+    height: 90px;
+    text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cell-card.mdl-card {
+    width: 95%;
+    /*height: 350px;*/
+    margin: 10px auto;
+    z-index: 1000;
+}
+.cell-card.image-card > .mdl-card__title{
+    background-image: url('../assets/images/butz.png');
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-color: #000;
+    background-size: 100%;
+    height: 230px;
+}
+
+.cell-card h2{
+    color: rgba(0, 148, 64, 1);;
+    font-size: 25px;
+    font-weight: 500;
+}
+.cell-card > p.card-date{
+    color: rgba(127, 127, 127, 1);;
+    font-size: 40px;
+    text-transform: capitalize;
+}
+
+.cell-card.mdl-card:first-child{
+    margin-top: -10px;
+}
+.cell-card.mdl-card:last-child{
+    margin-bottom: -10px;
+}
+
+
+/*Slider*/
+.home-slider li{
     background-color: yellow;
+    height:200px;
+    max-height:200px;
 }
-.mdl-cell--3-col {
-    background-color: green;
+.home-slider li img{
 }
+
+
+
+/*Directory*/

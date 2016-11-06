@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="de">
+  <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/material/material.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="css/app.css">
+	<link rel="stylesheet" href="css/slippry.css" />
+
+	<!-- JS -->
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/material/material.min.js"></script>
+	<script src="js/slippry.min.js"></script>
+
+	<title>LMU Medieninformatik</title>
+</head>
+<body class="">
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+		<header class="mdl-layout__header color-dark-green" id="lmu-medieninfo-top">
+			<div class="mdl-layout__header-row">
+				<!-- Title -->
+				<!-- <span class="mdl-layout-title"> -->
+				<img src="assets/images/logo-header.png" height="40x">
+				<!-- </span> -->
+				<nav class="mdl-layout--large-screen-only mdl-navigation mdl-typography--body-1-force-preferred-font">
+					<a class="mdl-navigation__link logo-font" href=""><i class="material-icons">search</i> Search</a>
+					<a class="mdl-navigation__link logo-font" href=""><i class="material-icons">access_time</i> Past visited</a>
+					<a class="mdl-navigation__link logo-font" href=""><i class="material-icons">list</i> A - Z Directory</a>
+					<a class="mdl-navigation__link logo-font" href=""><i class="material-icons">remove_red_eye</i> I'm looking for</a>
+				</nav>
+			</div>
+		</header>
+		<!-- <! For small screens show a drawer -->
+		<div class="mdl-layout__drawer mdl-layout--small-screen-only">
+			<!-- <span class="mdl-layout-title"> -->
+				<!-- <img class="android-logo-image" src="images/android-logo-white.png"> -->
+			<!-- </span> -->
+			<nav class="mdl-navigation">
+
+			<div class="mdl-grid mdl-cell--stretch mdl-cell--right">
+			<div class="mdl-layout-spacer"></div>
+			<!-- <div class="mdl-layout-spacer"></div> -->
+			<!-- <div class="mdl-layout-spacer"></div> -->
+			<!-- <div class="mdl-cell mdl-cell--4-col"> -->
+			<!-- <a class="logo-font" href=""><i class="material-icons">close</i></a> -->
+			</div>
+			<!-- <a class="logo-font close-window-button" href=""><iclass="material-icons">close</i></a> -->
+			<a class="mdl-navigation__link logo-font" href=""><i class="material-icons">search</i>Search</a>
+			<div class="android-drawer-separator"></div>
+			<a class="mdl-navigation__link logo-font" href=""><iclass="material-icons">access_time</i> Past visited</a>
+			<div class="android-drawer-separator"></div>
+			<a class="mdl-navigation__link logo-font" href=""><i class="material-icons">list</i> A- Z Directory</a>
+			<div class="android-drawer-separator"></div>
+			<a class="mdl-navigation__link logo-font" href=""><iclass="material-icons">remove_red_eye</i> I'm looking for</a>
+			<!-- <span class="mdl-navigation__link" href="">Versions</span> -->
+			<a class="mdl-navigation__link" href="">Infos about attending</a>
+			<a class="mdl-navigation__link" href="">Student resources</a>
+			<a class="mdl-navigation__link" href="">Faculty/Staff Resources</a>
+			<a class="mdl-navigation__link" href="">Current lectures</a>
+			<a class="mdl-navigation__link" href="">Current resources</a>
+		</div>
+
+		<main class="mdl-layout__content">
+			<div class="mdl-grid mdl-grid--no-spacing">
+				<!-- Section imageslider -->
+				<div class="image-slider mdl-cell mdl-cell--12-col color-dark-grey">
+					<div class="cell-content">
+						<div class="sy-box">
+							<ul class="home-slider">
+								<li>
+									<a href="#slide1"><img src="assets/images/img1.jpg" alt="Welcome to Slippry!"></a>
+								</li>
+								<li>
+									<a href="#slide2"><img src="assets/images/img2.jpg"  alt="This is an awesome jQuery slider plugin."></a>
+								</li>
+								<li>
+									<a href="#slide3"><img src="assets/images/img3.jpg" alt="Check it out, you are going to <span class='red'>♥</span> it :)"></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- End Section imageslider -->
+				<!-- Section get to know -->
+				<div class="get-to-know mdl-cell mdl-cell--12-col color-light-grey">
+					<div class="cell-header color-dark-green">
+						<h2>Get to know us</h2>
+					</div>
+					<div class="cell-content">
+						<div class="cell-card mdl-card mdl-shadow--2dp">
+							<div class="mdl-card__title mdl-card--expand">
+								<h2 class="mdl-card__title-text">Our programs</h2>
+							</div>
+							<div class="mdl-card__supporting-text">
+								<p>
+									We offer specialized Bachelor and Master programs in the field of Media Informatics. Click to learn more.
+								</p>
+								<div class="more-about">
+									<a href="#">See all programs</a>
+								</div>
+							</div>
+						</div>
+						<div class="cell-card mdl-card mdl-shadow--2dp">
+							<div class="mdl-card__title mdl-card--expand">
+								<h2 class="mdl-card__title-text">Get a closer look</h2>
+							</div>
+							<div class="mdl-card__supporting-text">
+								<p>
+									On our blog you can get more insides on our study programs from students and professors of our faculty.
+								</p>
+								<div class="more-about">
+									<a href="#">See all programs</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End Section get to know -->
+				<!-- Section staff -->
+				<div class="staff mdl-cell mdl-cell--12-col">
+					<div class="cell-header color-dark-green">
+						<h2>Staff & Students</h2>
+					</div>
+					<div class="cell-content">
+						<div class="cell-card image-card mdl-card mdl-shadow--2dp">
+							<div class="mdl-card__title mdl-card--expand">
+							</div>
+							<div class="mdl-card__supporting-text">
+								<h2 class="mdl-card__title-text">Prof. Andreas Butz</h2>
+								<p>
+									On our blog you can get more insides on our study programs form students and professors of our faculty
+								</p>
+								<div class="more-about">
+									<a href="#">More about Andreas</a>
+								</div>
+							</div>
+						</div>
+						<div class="cell-card image-card mdl-card mdl-shadow--2dp">
+							<div class="mdl-card__title mdl-card--expand">
+							</div>
+							<div class="mdl-card__supporting-text">
+								<h2 class="mdl-card__title-text">Peter Gleixner</h2>
+								<p>
+									On our blog you can get more insides on our study programs form students and professors of our faculty
+								</p>
+								<div class="more-about">
+									<a href="#">More about Andreas</a>
+								</div>
+							</div>
+						</div>
+						<div class="cell-card image-card mdl-card mdl-shadow--2dp">
+							<div class="mdl-card__title mdl-card--expand">
+							</div>
+							<div class="mdl-card__supporting-text">
+								<h2 class="mdl-card__title-text">Our Team & Students</h2>
+								<p>
+									On our blog you can get more insides on our study programs form students and professors of our faculty
+								</p>
+								<div class="more-about">
+									<a href="#">Meet more of us</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End Section Staff -->
+				<!-- Section News -->
+				<div class="staff mdl-cell mdl-cell--12-col">
+					<div class="cell-header color-dark-green">
+						<h2>News</h2>
+					</div>
+					<div class="cell-content">
+						<div class="cell-card image-card mdl-card mdl-shadow--2dp">
+							<div class="mdl-card__supporting-text">
+								<p class="card-date">
+									14. OCT 2016
+								</p>
+								<h4 class="mdl-card__title-text">Prof. Andreas Butz</h2>
+								<p>
+									On our blog you can get more insides on our study programs form students and professors of our faculty
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End Section News -->
+			</div>
+			<!-- End Grid -->
+		</main>
+		<!-- End main -->
+		<!-- Footer -->
+		<footer class="mdl-mini-footer color-dark-green">
+			Footer
+		</footer>
+		<!-- End Footer -->
+	</div>
+</body>
+</html>
