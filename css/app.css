@@ -1,0 +1,9 @@
+.content-grid {
+  max-width: 960px;
+}
+.mdl-cell--6-col {
+    background-color: yellow;
+}
+.mdl-cell--3-col {
+    background-color: green;
+}
