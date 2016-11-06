@@ -11,7 +11,7 @@
     <div class="mdl-layout__header-row">
       <!-- Title -->
       <!-- <span class="mdl-layout-title"> -->
-      <img src="logo.png" height="40x">
+      <img class="lmu-logo" src="logo.png" height="40x">
       <!-- </span> -->
       <nav class="mdl-layout--large-screen-only mdl-navigation mdl-typography--body-1-force-preferred-font">
                       <a class="mdl-navigation__link logo-font" href=""><i class="material-icons">search</i> Search</a>
@@ -150,6 +150,20 @@
     {
       font-size: 90%;
     }
+
+    th{
+      text-align: left;
+    }
+
+    .mdl-layout__header-row{
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+
+    .mdl-layout__header{
+      padding-left: 20px;
+      padding-right: 20px;
+    }
   </style>
   <main class="mdl-layout__content">
     <section class="mdl-layout__tab-panel is-active" id="scroll-tab-1">
@@ -173,7 +187,8 @@
   </main> 
   <!-- <div class=""> -->
           <!-- <div class="mdl-typography--display-1-color-contrast"></div> -->
-          <div class="mdl-grid lmu-max-width">
+          <!-- For small screens -->
+          <div class="mdl-grid lmu-max-width mdl-layout--small-screen-only">
             <div class="lmu-card-height mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
               <div class="mdl-card__media">
                 <!-- <img src="images/more-from-1.png"> -->
@@ -257,12 +272,119 @@
             </div> 
             
           </div>
+          <!-- For large screens -->
+          <div class="mdl-grid lmu-max-width mdl-layout--large-screen-only">
+            <div class="lmu-card-height mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <!-- <img src="images/more-from-1.png"> -->
+              </div>
+              <!-- <div class="mdl-card__title"> -->
+                 <!-- <h4 class="mdl-card__title-text">Prof. Dr. Andreas Butz</h4> -->
+              <!-- </div> -->
+              <div class="mdl-card__supporting-text mdl-typography--font-light mdl-typography--subhead">
+                  <table style="width:100%">
+                  <tr>
+                    <th class="mdl-typography--subhead" style="width:60%">Prof. Dr. Andreas Butz</th>
+                    <th class="mdl-typography--subhead">Kontakt</th>
+                  </tr>
+                  <tr>
+                    <td class="mdl-typography--font-light mdl-typography--subhead">
+                    Chair for Human-Computer-Interaction
+                    </td>
+                    <td class="mdl-typography--font-light mdl-typography--subhead">
+                    Room: A503 (5th floor)
+                  </td>
+                  </tr>
+                  <tr>
+                    <td class="mdl-typography--font-light mdl-typography--subhead"></td>
+                    <td class="mdl-typography--font-light mdl-typography--subhead">+49-89-2180-4665</td>
+                  </tr>
+                  
+                  </table>
+                  
+              </div>
+              <div class="mdl-card__actions">
+                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                   andreas.butz@ifi.lmu.de
+                   <!-- <i class="material-icons">chevron_right</i> -->
+                 </a>
+              </div>
+            </div>
+            <div class="lmu-card-height mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <!-- <img src="images/more-from-1.png"> -->
+              </div>
+              <!-- <div class="mdl-card__title"> -->
+                 <!-- <h4 class="mdl-card__title-text">Prof. Dr. Andreas Butz</h4> -->
+              <!-- </div> -->
+              <div class="mdl-card__supporting-text mdl-typography--font-light mdl-typography--subhead">
+                  <table style="width:100%">
+                  <tr>
+                    <th class="mdl-typography--subhead" style="width:60%">Blender 3D-Modeling</th>
+                    <th class="mdl-typography--subhead">Info</th>
+                  </tr>
+                  <tr>
+                    <td class="mdl-typography--font-light mdl-typography--subhead">Dr.-Ing. Wolfgang Höhl
+                    </td>
+                    <td class="mdl-typography--font-light mdl-typography--subhead">SS16
+                  </td>
+                  </tr>
+                  <tr>
+                    <td class="mdl-typography--font-light mdl-typography--subhead"></td>
+                    <td class="mdl-typography--font-light mdl-typography--subhead">ECTS credits: 6</td>
+                  </tr>
+                  
+                  </table>
+                  
+              </div>
+              <div class="mdl-card__actions">
+                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                   Website
+                   <!-- <i class="material-icons">chevron_right</i> -->
+                 </a>
+              </div>
+            </div>
 
-          
+            <div class="lmu-card-height mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <!-- <img src="images/more-from-1.png"> -->
+              </div>
+              <!-- <div class="mdl-card__title"> -->
+                 <!-- <h4 class="mdl-card__title-text">Prof. Dr. Andreas Butz</h4> -->
+              <!-- </div> -->
+              <div class="mdl-card__supporting-text mdl-typography--font-light mdl-typography--subhead">
+                  <table style="width:100%">
+                  <tr>
+                    <th class="mdl-typography--subhead" style="width:60%">Periphal Interaction - Exploring the Design Space</th>
+                    <th class="mdl-typography--subhead">Info</th>
+                  </tr>
+                  <tr>
+                    <td class="mdl-typography--font-light mdl-typography--subhead">
+                    Dors Hausen
+                    </td>
+                    <td class="mdl-typography--font-light mdl-typography--subhead">
+                    PhD Thesis
+                  </td>
+                  </tr>
+                  <tr>
+                    <td class="mdl-typography--font-light mdl-typography--subhead"></td>
+                    <td class="mdl-typography--font-light mdl-typography--subhead">Faculty of Mathematics, Computer Science and Statistics</td>
+                  </tr>
+                  
+                  </table>
+                  
+              </div>
+              <div class="mdl-card__actions">
+                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                   Download
+                   <!-- <i class="material-icons">chevron_right</i> -->
+                 </a>
+              </div>
+            </div>
+            
+          </div>
           
     <!-- </div> -->
     
-
-
 </div>
 </html>
