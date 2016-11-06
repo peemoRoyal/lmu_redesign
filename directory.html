@@ -5,15 +5,24 @@
 <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
 <!-- Simple header with scrollable tabs. -->
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-  <header class="mdl-layout__header">
+
+  <header class="mdl-layout__header" id="lmu-medieninfo-top">
+
     <div class="mdl-layout__header-row">
       <!-- Title -->
       <span class="mdl-layout-title">
       <img src="logo.png" height="40x">
       </span>
+      <nav class="mdl-layout--large-screen-only mdl-navigation mdl-typography--body-1-force-preferred-font">
+                      <a class="mdl-navigation__link logo-font" href=""><i class="material-icons">search</i> Search</a>
+                      <a class="mdl-navigation__link logo-font" href=""><i class="material-icons">access_time</i> Past visited</a>
+                      <a class="mdl-navigation__link logo-font" href=""><i class="material-icons">list</i> A - Z Directory</a>
+                      <a class="mdl-navigation__link logo-font" href=""><i class="material-icons">remove_red_eye</i> I'm looking for</a>
+      </nav>
     </div>
     <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
     <span class="mdl-layout-title">A - Z Dictionary</span><br><br>
+    <!-- <a name="lmu-medieninfo-top"> -->
     <p>
             <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
             <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input">
@@ -59,9 +68,10 @@
         <a href="#scroll-tab-4" class="mdl-layout__tab">Y</a>
         <a href="#scroll-tab-5" class="mdl-layout__tab">Z</a>
     </div>
-  </header><!-- 
-  <div class="mdl-layout-spacer"></div> -->
-  <div class="mdl-layout__drawer">
+  </header>
+  <
+  <!-- <! For small screens show a drawer -->
+  <div class="mdl-layout__drawer mdl-layout--small-screen-only">
         <!-- <span class="mdl-layout-title"> -->
           <!-- <img class="android-logo-image" src="images/android-logo-white.png"> -->
         <!-- </span> -->
@@ -150,7 +160,15 @@
                  <h4 class="mdl-card__title-text">Blender 3D-Modeling</h4>
               </div>
               <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">Lorem ipsum</span>
+                <span class="mdl-typography--font-light mdl-typography--subhead">
+                <p>
+                Dr.-Ing. Wolfang Höhl
+                <br><br>
+                <b>Info</b><br>
+                SS 16<br>
+                ECTS credits: 6
+                </p>
+                </span>
               </div>
               <div class="mdl-card__actions">
                  <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
@@ -168,7 +186,14 @@
                  <h4 class="mdl-card__title-text">Periphal Interaction - Exploring the Design Space</h4>
               </div>
               <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">Lorem ipsum.</span>
+                <span class="mdl-typography--font-light mdl-typography--subhead">
+                  <p>
+                  Doris Hausen<br><br>
+                  <b>Info</b><br>
+                  PhD thesis<br>
+                  Faculty of Mathematics, Computer Science and Statistics
+                  </p>
+                </span>
               </div>
               <div class="mdl-card__actions">
                  <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
@@ -181,7 +206,7 @@
              <div class="mdl-layout-spacer"></div>
              <!-- <div class="mdl-cell mdl-cell--4-col"> -->
                 <button class="mdl-cell--stretch mdl-cell--middle mdl-button mdl-js-button mdl-button--fab">
-                  <i class="material-icons">keyboard_arrow_up</i>
+                  <a href="#lmu-medieninfo-top"><i class="material-icons">keyboard_arrow_up</i></a>
                 </button>
              <!-- </div> -->
              <div class="mdl-layout-spacer"></div>
