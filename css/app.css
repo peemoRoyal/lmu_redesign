@@ -1,5 +1,5 @@
 /* --------------- General ---------------*/
-body, h1, h2, h3, h4, h5, div, p, a {
+body {
     font-family: Verdana;
 }
 h2 {
@@ -15,7 +15,6 @@ a {
 a:visited {
     background-color: rgba(127, 127, 127, 1);;
 }
-
 /*Align Menu Right*/
 .mdl-layout__drawer-button, .mdl-layout__drawer, .close-window-button{
       left: initial;
@@ -48,10 +47,6 @@ a:visited {
     padding-top: 0;
 }
 
-.mdl-layout__content {
-    flex:1 0 auto;;
-}
-
 .cell-header{
     color:#fff;
     height: 90px;
@@ -65,9 +60,10 @@ a:visited {
     width: 95%;
     /*height: 350px;*/
     margin: 10px auto;
+    z-index: 1000;
 }
 .cell-card.image-card > .mdl-card__title{
-    background-image: url('../assets/images/prof01.jpg');
+    background-image: url('../assets/images/butz.png');
     background-position: bottom right;
     background-repeat: no-repeat;
     background-color: #000;
@@ -79,15 +75,6 @@ a:visited {
     color: rgba(0, 148, 64, 1);;
     font-size: 25px;
     font-weight: 500;
-}
-.cell-card h4{
-    color: rgba(0, 148, 64, 1);;
-    font-size: 14px;
-    font-weight: 500;
-}
-
-.cell-card.news-card {
-    height: auto;
 }
 .cell-card > p.card-date{
     color: rgba(127, 127, 127, 1);;
@@ -112,44 +99,6 @@ a:visited {
 .home-slider li img{
 }
 
-.back-to-top {
-    text-align: center;
-    padding: 30px 0;
-}
-/*Footer*/
-.footer {
-    color: #fff;
-}
-.footer div{
-    padding: 15px;
-}
-.footer h5{
-    font-size: 12px;
-    font-weight: bolder;
-}
-.footer p{
-    font-weight: lighter;
-    font-size: 11px;
-    line-height: 15px;
-}
-.footer .footer-bottom {
-    text-align: center;
-}
-.footer .footer-bottom a{
-    color:#fff;
-    font-size: 13px;
-    text-transform: capitalize;
-    text-decoration: underline;
-}
-.footer .social-media-icons{
-    text-align: center;
-    font-size: 40px;
-}
-.footer .social-media-icons i{
-    margin-right: 2.5%;
-}
-.footer .social-media-icons i:last-child{
-    margin-right: 0;
-}
+
 
 /*Directory*/
