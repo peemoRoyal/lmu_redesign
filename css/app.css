@@ -37,15 +37,17 @@ a:visited {
 }
 /*Color*/
 .color-dark-green {
-    background-color: rgba(0, 148, 64, 1);;
+    background-color: rgba(0, 148, 64, 1);
 }
 .color-dark-grey {
-    background-color: rgba(127, 127, 127, 1);;
+    background-color: rgba(127, 127, 127, 1);
 }
 .color-light-grey {
-    background-color: rgba(192, 192, 192, 1);;
+    background-color: rgba(192, 192, 192, 1);
 }
-
+.color-white {
+    background-color: #fff;
+}
 /*Home*/
 .cell-header h1 {
     font-size: 26px;
@@ -194,5 +196,56 @@ a:visited {
     margin-right: 15px;
 }
 
+/*-------------------- Past visited --------------------*/
+.side-menu {
+    height: 100%;
+    width: 0;
+    /*width: 85vw;*/
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+    -webkit-box-shadow: 6px 0px 20px 1px rgba(0,0,0,0.68);
+    -moz-box-shadow: 6px 0px 20px 1px rgba(0,0,0,0.68);
+    box-shadow: 6px 0px 20px 1px rgba(0,0,0,0.68);
+}
+.side-menu .closebtn {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 25px;
+    margin-left: 50px;
+    text-decoration: none;
 
-/*Directory*/
+}
+.side-menu h1{
+    margin-left: 15px;
+    font-size: 22px;
+    font-weight: 500;
+    color: rgba(0, 148, 64, 1);
+}
+.side-menu .past-visited-card{
+    color: #fff;
+    width: 90%;
+    height: 150px;
+    margin: 0 auto;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.side-menu .past-visited-card .subtitle{
+    font-size: 9px;
+    text-transform: uppercase;
+}
+.side-menu .past-visited-card .title{
+    font-size: 16px;
+    line-height: 17px;
+}
+.side-menu .pin-status{
+}
+
+
+/*-------------------- Directory --------------------*/

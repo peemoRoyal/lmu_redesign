@@ -16,6 +16,53 @@
 </head>
 <body class="">
 	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+		<!-- ---------------- SideMenu ------------------- -->
+		<div id="past-visited-menu" class="side-menu color-white">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<h1>Places I`ve visited</h1>
+
+			<div class="past-visited-card color-dark-green">
+				<div class="pin-status pinned"><i class="fa fa-thumb-tack" aria-hidden="true"></i>
+				</div><br>
+				<div class="subtitle">
+					Current lectures
+				</div>
+				<div class="title">
+					Human Computer Interaction II
+				</div>
+			</div>
+			<div class="past-visited-card color-dark-green">
+				<div class="pin-status pinned"><i class="fa fa-thumb-tack" aria-hidden="true"></i>
+				</div><br>
+				<div class="subtitle">
+					Current lectures
+				</div>
+				<div class="title">
+					Information Visualization
+				</div>
+			</div>
+			<div class="past-visited-card color-dark-grey">
+				<div class="pin-status"><i class="fa fa-thumb-tack" aria-hidden="true"></i>
+				</div><br>
+				<div class="subtitle">
+					Faculty/Staff Resources
+				</div>
+				<div class="title">
+					Prrof. Dr. Andresas Butz
+				</div>
+			</div>
+			<div class="past-visited-card color-dark-grey">
+				<div class="pin-status"><i class="fa fa-thumb-tack" aria-hidden="true"></i>
+				</div><br>
+				<div class="subtitle">
+				</div>
+				<div class="title">
+					A-Z Directory
+				</div>
+			</div>
+		</div>
+		<!-- ---------------- SideMenu ------------------- -->
+
 		<header class="mdl-layout__header color-dark-green" id="lmu-medieninfo-top">
 			<div class="mdl-layout__header-row">
 				<!-- Title -->
@@ -25,7 +72,7 @@
 				<nav class="mdl-layout--large-screen-only mdl-navigation mdl-typography--body-1-force-preferred-font">
 					<a class="mdl-navigation__link logo-font" href=""><i class="material-icons">search</i> Search</a>
 					<a class="mdl-navigation__link logo-font" onclick="openNav()" href=""><i class="material-icons">access_time</i> Past visited</a>
-					<a class="mdl-navigation__link logo-font" href=""><i class="material-icons">list</i> A - Z Directory</a>
+					<a class="mdl-navigation__link logo-font" href="directory.html"><i class="material-icons">list</i> A - Z Directory</a>
 					<a class="mdl-navigation__link logo-font" href=""><i class="material-icons">remove_red_eye</i> I'm looking for</a>
 				</nav>
 			</div>
@@ -47,9 +94,9 @@
 			<!-- <a class="logo-font close-window-button" href=""><iclass="material-icons">close</i></a> -->
 			<a class="mdl-navigation__link logo-font" href=""><i class="material-icons">search</i>Search</a>
 			<div class="android-drawer-separator"></div>
-			<a class="mdl-navigation__link logo-font" href=""><i class="material-icons">access_time</i> Past visited</a>
+			<a class="mdl-navigation__link logo-font" onclick="openNav()" href="javascript:void(0)"><i class="material-icons">access_time</i> Past visited</a>
 			<div class="android-drawer-separator"></div>
-			<a class="mdl-navigation__link logo-font" href=""><i class="material-icons">list</i> A- Z Directory</a>
+			<a class="mdl-navigation__link logo-font" href="directory.html"><i class="material-icons">list</i> A- Z Directory</a>
 			<div class="android-drawer-separator"></div>
 			<a class="mdl-navigation__link logo-font" href=""><i class="material-icons">remove_red_eye</i> I'm looking for</a>
 			<!-- <span class="mdl-navigation__link" href="">Versions</span> -->
