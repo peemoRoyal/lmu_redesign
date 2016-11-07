@@ -24,7 +24,7 @@
 				<!-- </span> -->
 				<nav class="mdl-layout--large-screen-only mdl-navigation mdl-typography--body-1-force-preferred-font">
 					<a class="mdl-navigation__link logo-font" href=""><i class="material-icons">search</i> Search</a>
-					<a class="mdl-navigation__link logo-font" href=""><i class="material-icons">access_time</i> Past visited</a>
+					<a class="mdl-navigation__link logo-font" onclick="openNav()" href=""><i class="material-icons">access_time</i> Past visited</a>
 					<a class="mdl-navigation__link logo-font" href=""><i class="material-icons">list</i> A - Z Directory</a>
 					<a class="mdl-navigation__link logo-font" href=""><i class="material-icons">remove_red_eye</i> I'm looking for</a>
 				</nav>
@@ -61,12 +61,11 @@
 		</div>
 
 		<main class="mdl-layout__content">
+			<!-- Grid Start -->
 			<div class="mdl-grid mdl-grid--no-spacing">
 
-
-
 				<!-- Section imageslider -->
-				<div class="image-slider mdl-cell mdl-cell--12-col color-dark-grey">
+				<div class="image-slider mdl-cell mdl-cell--12-col">
 					<div class="cell-content">
 						<div class="w3-content w3-display-container slider-wrapper">
 							<img class="slide" src="assets/images/img1.jpg">
@@ -86,16 +85,10 @@
 				</div>
 				<!-- End Section imageslider -->
 
-
-
-
-
-
-
 				<!-- Section get to know -->
-				<div class="get-to-know mdl-cell mdl-cell--12-col color-light-grey">
+				<div class="get-to-know mdl-cell mdl-cell--12-col">
 					<div class="cell-header color-dark-green">
-						<h2>Get to know us</h2>
+						<h1>Get to know us</h1>
 					</div>
 					<div class="cell-content">
 						<div class="cell-card mdl-card mdl-shadow--2dp">
@@ -130,7 +123,7 @@
 				<!-- Section staff -->
 				<div class="staff mdl-cell mdl-cell--12-col">
 					<div class="cell-header color-dark-green">
-						<h2>Staff & Students</h2>
+						<h1>Staff & Students</h1>
 					</div>
 					<div class="cell-content">
 						<div class="cell-card image-card mdl-card mdl-shadow--2dp">
@@ -175,26 +168,83 @@
 					</div>
 				</div>
 				<!-- End Section Staff -->
+
+
 				<!-- Section News -->
-				<div class="staff mdl-cell mdl-cell--12-col">
+				<div class="news mdl-cell mdl-cell--12-col">
 					<div class="cell-header color-dark-green">
-						<h2>News</h2>
+						<h1>News</h1>
 					</div>
 					<div class="cell-content">
 						<div class="cell-card news-card mdl-card mdl-shadow--2dp">
 							<div class="mdl-card__supporting-text">
-								<p class="card-date">
-									4. Nov 2016
-								</p>
-								<h4 class="mdl-card__title-text">Consultation Hour Prof. Hussmann on 11th of November cancelled</h4>
-								<p>
-									An additional consultation hour is scheduled for Monday 14th of November 2pm, instead.
-								</p>
+								<div class="news-item">
+									<p class="card-date">
+										4. Nov 2016
+									</p>
+									<h4 class="mdl-card__title-text">Consultation Hour Prof. Hussmann on 11th of November cancelled</h4><br>
+									<p>
+										An additional consultation hour is scheduled for Monday 14th of November 2pm, instead.
+									</p>
+								</div>
+								<hr>
+								<div class="news-item">
+									<p class="card-date">
+										14. oct 2016
+									</p>
+									<h4 class="mdl-card__title-text">Confliction lecture time "Analysis" and "Psychology 1"</h4><br>
+									<p>
+										There is an overlap. Deal with it!
+									</p>
+								</div>
+								<div class="see-more">
+									<hr>
+									<a href="#">see older news</a>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 				<!-- End Section News -->
+
+				<!-- Section Twitter -->
+				<div class="twitter mdl-cell mdl-cell--12-col">
+					<div class="cell-header color-dark-green">
+						<h1>Twitter</h1>
+					</div>
+					<div class="cell-content">
+						<div class="cell-card news-card mdl-card mdl-shadow--2dp">
+							<div class="mdl-card__supporting-text">
+								<div class="news-item">
+									<p class="card-date">
+										4. Nov 2016
+									</p>
+									<h4 class="mdl-card__title-text">Consultation Hour Prof. Hussmann on 11th of November cancelled</h4><br>
+									<p>
+										An additional consultation hour is scheduled for Monday 14th of November 2pm, instead.
+									</p>
+								</div>
+								<hr>
+								<div class="news-item">
+									<p class="card-date">
+										14. oct 2016
+									</p>
+									<h4 class="mdl-card__title-text">Confliction lecture time "Analysis" and "Psychology 1"</h4><br>
+									<p>
+										There is an overlap. Deal with it!
+									</p>
+								</div>
+								<div class="see-more">
+									<hr>
+									<a href="#">see older tweets</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End Section Twitter -->
+
+
 				<div class="back-to-top mdl-cell mdl-cell--12-col">
 					<div class="cell-content">
 						<button class="mdl-cell--stretch mdl-cell--middle mdl-button mdl-js-button mdl-button--fab">
@@ -204,7 +254,7 @@
 				</div>
 				<!-- End Top Button -->
 				<div class="footer mdl-cell mdl-cell--12-col">
-					<div class="footer-top color-dark-green">
+					<div class="footer-upper color-dark-green">
 						<h5>Institut für Informatik <br> LFE Medieninformatik </h5>
 						<p>
 							Amalienstraße 17 <br>
@@ -212,15 +262,15 @@
 							80333 München <br>
 							Germany
 						</p>
-					<div class="social-media-icons">
-						<i class="fa fa-facebook-square" aria-hidden="true"></i>
-						<i class="fa fa-youtube-square" aria-hidden="true"></i>
-						<i class="fa fa-wordpress" aria-hidden="true"></i>
-						<i class="fa fa-twitter-square" aria-hidden="true"></i>
-						<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+						<div class="social-media-icons">
+							<i class="fa fa-facebook-square" aria-hidden="true"></i>
+							<i class="fa fa-youtube-square" aria-hidden="true"></i>
+							<i class="fa fa-wordpress" aria-hidden="true"></i>
+							<i class="fa fa-twitter-square" aria-hidden="true"></i>
+							<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+						</div>
 					</div>
-					</div>
-					<div class="footer-bottom color-dark-grey">
+					<div class="footer-lower color-dark-grey">
 						<a href="#">Impressum</a>
 						<a href="#">Privacy Agreement</a>
 					</div>
