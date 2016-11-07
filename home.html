@@ -8,16 +8,9 @@
 	<link rel="stylesheet" href="css/material/material.min.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" href="css/app.css">
+	<!-- Plugins -->
 	<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
-
-	<link rel="stylesheet" href="css/slippry.css" />
-
-
-	<!-- JS -->
-	<script src="js/jquery-3.1.1.min.js"></script>
-	<script src="js/app.js"></script>
-	<script src="js/material/material.min.js"></script>
-	<script src="js/slippry.min.js"></script>
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 
 	<title>LMU Medieninformatik</title>
 </head>
@@ -69,25 +62,36 @@
 
 		<main class="mdl-layout__content">
 			<div class="mdl-grid mdl-grid--no-spacing">
+
+
+
 				<!-- Section imageslider -->
 				<div class="image-slider mdl-cell mdl-cell--12-col color-dark-grey">
 					<div class="cell-content">
-						<div class="sy-box">
-							<ul class="home-slider">
-								<li>
-									<a href="#slide1"><img src="assets/images/img1.jpg" alt="Welcome to Slippry!"></a>
-								</li>
-								<li>
-									<a href="#slide2"><img src="assets/images/img2.jpg"  alt="This is an awesome jQuery slider plugin."></a>
-								</li>
-								<li>
-									<a href="#slide3"><img src="assets/images/img3.jpg" alt="Check it out, you are going to <span class='red'>♥</span> it :)"></a>
-								</li>
-							</ul>
+						<div class="w3-content w3-display-container slider-wrapper">
+							<img class="slide" src="assets/images/img1.jpg">
+							<img class="slide" src="assets/images/img2.jpg">
+							<img class="slide" src="assets/images/img3.jpg">
+							<div class="w3-center w3-display-middle" style="width:100%">
+								<div class="w3-left arrow" onclick="plusDivs(-1)">&#10094;</div>
+								<div class="w3-right arrow" onclick="plusDivs(1)">&#10095;</div>
+							</div>
+							<div class="w3-center w3-display-bottommiddle" style="width:100%">
+								<span class="w3-badge slider-badge w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+								<span class="w3-badge slider-badge w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+								<span class="w3-badge slider-badge w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+							</div>
 						</div>
 					</div>
 				</div>
 				<!-- End Section imageslider -->
+
+
+
+
+
+
+
 				<!-- Section get to know -->
 				<div class="get-to-know mdl-cell mdl-cell--12-col color-light-grey">
 					<div class="cell-header color-dark-green">
@@ -224,12 +228,13 @@
 			</div>
 			<!-- End Grid -->
 		</main>
-		<!-- End main -->
-		<!-- Footer -->
-		<!-- <footer class="mdl-mega-footer color-dark-green">
-			Footer
-		</footer> -->
-		<!-- End Footer -->
 	</div>
 </body>
+
+<!-- JS -->
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/material/material.min.js"></script>
+<!-- Plugins -->
+<script src="js/app.js"></script>
+
 </html>
