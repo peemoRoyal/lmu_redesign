@@ -1,0 +1,390 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
+<script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+<!-- Simple header with scrollable tabs. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+  <header class="mdl-layout__header" id="lmu-medieninfo-top">
+
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <!-- <span class="mdl-layout-title"> -->
+      <img class="lmu-logo" src="logo.png" height="40x">
+      <!-- </span> -->
+      <nav class="mdl-layout--large-screen-only mdl-navigation mdl-typography--body-1-force-preferred-font">
+                      <a class="mdl-navigation__link logo-font" href=""><i class="material-icons">search</i> Search</a>
+                      <a class="mdl-navigation__link logo-font" href=""><i class="material-icons">access_time</i> Past visited</a>
+                      <a class="mdl-navigation__link logo-font" href=""><i class="material-icons">list</i> A - Z Directory</a>
+                      <a class="mdl-navigation__link logo-font" href=""><i class="material-icons">remove_red_eye</i> I'm looking for</a>
+      </nav>
+    </div>
+    <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+    <span class="mdl-layout-title">A - Z Dictionary</span><br><br>
+    <!-- <a name="lmu-medieninfo-top"> -->
+    <p>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+            <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input">
+            <span class="mdl-checkbox__label">People</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
+              <input type="checkbox" id="checkbox-2" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Lectures</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-3">
+              <input type="checkbox" id="checkbox-3" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Publications</span>
+            </label>
+    </p>
+  </div>
+    
+    <!-- Tabs -->
+    <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+      <a href="#scroll-tab-1" class="mdl-layout__tab">A</a>
+        <a href="#scroll-tab-2" class="mdl-layout__tab is-active">B</a>
+        <a href="#scroll-tab-3" class="mdl-layout__tab">C</a>
+        <a href="#scroll-tab-4" class="mdl-layout__tab">D</a>
+        <a href="#scroll-tab-5" class="mdl-layout__tab">E</a>
+        <a href="#scroll-tab-6" class="mdl-layout__tab">F</a>
+        <a href="#scroll-tab-3" class="mdl-layout__tab">G</a>
+        <a href="#scroll-tab-4" class="mdl-layout__tab">H</a>
+        <a href="#scroll-tab-5" class="mdl-layout__tab">I</a>
+        <a href="#scroll-tab-6" class="mdl-layout__tab">J</a>
+        <a href="#scroll-tab-3" class="mdl-layout__tab">K</a>
+        <a href="#scroll-tab-4" class="mdl-layout__tab">L</a>
+        <a href="#scroll-tab-5" class="mdl-layout__tab">M</a>
+        <a href="#scroll-tab-6" class="mdl-layout__tab">N</a>
+        <a href="#scroll-tab-3" class="mdl-layout__tab">O</a>
+        <a href="#scroll-tab-4" class="mdl-layout__tab">P</a>
+        <a href="#scroll-tab-5" class="mdl-layout__tab">Q</a>
+        <a href="#scroll-tab-6" class="mdl-layout__tab">R</a>
+        <a href="#scroll-tab-3" class="mdl-layout__tab">S</a>
+        <a href="#scroll-tab-4" class="mdl-layout__tab">T</a>
+        <a href="#scroll-tab-5" class="mdl-layout__tab">U</a>
+        <a href="#scroll-tab-6" class="mdl-layout__tab">V</a>
+        <a href="#scroll-tab-6" class="mdl-layout__tab">W</a>
+        <a href="#scroll-tab-3" class="mdl-layout__tab">X</a>
+        <a href="#scroll-tab-4" class="mdl-layout__tab">Y</a>
+        <a href="#scroll-tab-5" class="mdl-layout__tab">Z</a>
+    </div>
+  </header>
+  
+  <!-- <! For small screens show a drawer -->
+  <div class="mdl-layout__drawer mdl-layout--small-screen-only">
+        <!-- <span class="mdl-layout-title"> -->
+          <!-- <img class="android-logo-image" src="images/android-logo-white.png"> -->
+        <!-- </span> -->
+          <nav class="mdl-navigation"> 
+
+          <!-- <div class="mdl-grid mdl-cell--stretch mdl-cell--right"> -->
+          <!-- <div class="mdl-layout-spacer"></div> -->
+             <!-- <div class="mdl-layout-spacer"></div> -->
+             <!-- <div class="mdl-layout-spacer"></div> -->
+             <!-- <div class="mdl-cell mdl-cell--4-col"> -->
+             <!-- <a class="logo-font" href=""><i class="material-icons">close</i></a> -->
+          <!-- </div> -->
+          <!-- <a class="logo-font close-window-button" href=""><i class="material-icons">close</i></a> -->
+          <a class="mdl-navigation__link logo-font" href=""><i class="material-icons">search</i> Search</a>
+          <div class="android-drawer-separator"></div>
+          <a class="mdl-navigation__link logo-font" href=""><i class="material-icons">access_time</i> Past visited</a>
+          <div class="android-drawer-separator"></div>
+          <a class="mdl-navigation__link logo-font" href=""><i class="material-icons">list</i> A - Z Directory</a>
+          <div class="android-drawer-separator"></div>
+          <a class="mdl-navigation__link logo-font" href=""><i class="material-icons">remove_red_eye</i> I'm looking for</a>
+          <!-- <span class="mdl-navigation__link" href="">Versions</span> -->
+          <a class="mdl-navigation__link" href="">Infos about attending</a>
+          <a class="mdl-navigation__link" href="">Student resources</a>
+          <a class="mdl-navigation__link" href="">Faculty/Staff Resources</a>
+          <a class="mdl-navigation__link" href="">Current lectures</a>
+          <a class="mdl-navigation__link" href="">Current resources</a>
+        </nav>
+      
+  </div>
+  <!-- Right align the drawer button -->
+  <style>
+    .mdl-layout__drawer-button, .mdl-layout__drawer, .close-window-button{
+        left: initial;
+        right: 0;
+    }
+
+    .mdl-layout__drawer{    
+        transform:translateX(250px);
+
+
+    }
+    .lmu-max-width {
+    max-width: 1100px;
+    margin: auto;
+
+}
+    .mdl-card__title-text{
+    font-size: 80%;
+
+}
+    .mdl-typography--subhead{
+      font-size: 90%;
+    }
+
+    .mdl-checkbox__label
+    {
+      font-size: 90%;
+    }
+
+    .mdl-layout-title
+    {
+      font-size: 150%;
+    }
+
+    .mdl-layout__tab
+    {
+      font-size: 80%;
+    }
+
+    .mdl-button
+    {
+      font-size: 65%;
+    }
+
+    .mdl-navigation__link
+    {
+      font-size: 90%;
+    }
+
+    th{
+      text-align: left;
+    }
+
+    .mdl-layout__header-row{
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+
+    .mdl-layout__header{
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  </style>
+  <main class="mdl-layout__content">
+    <section class="mdl-layout__tab-panel is-active" id="scroll-tab-1">
+      <div class="page-content"><!-- Your content goes here --></div>
+    </section>
+    <section class="mdl-layout__tab-panel" id="scroll-tab-2">
+      <div class="page-content"><!-- Your content goes here --></div>
+    </section>
+    <section class="mdl-layout__tab-panel" id="scroll-tab-3">
+      <div class="page-content"><!-- Your content goes here --></div>
+    </section>
+    <section class="mdl-layout__tab-panel" id="scroll-tab-4">
+      <div class="page-content"><!-- Your content goes here --></div>
+    </section>
+    <section class="mdl-layout__tab-panel" id="scroll-tab-5">
+      <div class="page-content"><!-- Your content goes here --></div>
+    </section>
+    <section class="mdl-layout__tab-panel" id="scroll-tab-6">
+      <div class="page-content"><!-- Your content goes here --></div>
+    </section>
+  </main> 
+  <!-- <div class=""> -->
+          <!-- <div class="mdl-typography--display-1-color-contrast"></div> -->
+          <!-- For small screens -->
+          <div class="mdl-grid lmu-max-width mdl-layout--small-screen-only">
+            <div class="lmu-card-height mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <!-- <img src="images/more-from-1.png"> -->
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">Prof. Dr. Andreas Butz</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">
+                  Chair for Human-Computer-Interaction<br><br>
+                  <b>Contact</b><br>
+                  Room: A503<br>
+                  +49-89-2180-4665</span>
+              </div>
+              <div class="mdl-card__actions">
+                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                   andreas.butz@ifi.lmu.de
+                   <!-- <i class="material-icons">chevron_right</i> -->
+                 </a>
+              </div>
+            </div>
+
+            <div class="mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <!-- <img src="images/more-from-4.png"> -->
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">Blender 3D-Modeling</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">
+                <!-- <p> -->
+                Dr.-Ing. Wolfang Höhl
+                <br><br>
+                <b>Info</b><br>
+                SS 16<br>
+                ECTS credits: 6
+                <!-- </p> -->
+                </span>
+              </div>
+              <div class="mdl-card__actions">
+                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                   Website
+                   <!-- <i class="material-icons">chevron_right</i> -->
+                 </a>
+              </div>
+            </div>
+
+            <div class="mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <!-- <img src="images/more-from-2.png"> -->
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">Periphal Interaction - Exploring the Design Space</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">
+                  <!-- <p> -->
+                  Doris Hausen<br><br>
+                  <b>Info</b><br>
+                  PhD thesis<br>
+                  Faculty of Mathematics, Computer Science and Statistics
+                  <!-- </p> -->
+                </span>
+              </div>
+              <div class="mdl-card__actions">
+                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                   Download
+                   <!-- <i class="material-icons">chevron_right</i> -->
+                 </a>
+              </div>
+            </div>
+            <div class="mdl-grid">
+             <div class="mdl-layout-spacer"></div>
+             <!-- <div class="mdl-cell mdl-cell--4-col"> -->
+                <button class="mdl-cell--stretch mdl-cell--middle mdl-button mdl-js-button mdl-button--fab">
+                  <a href="#lmu-medieninfo-top"><i class="material-icons">keyboard_arrow_up</i></a>
+                </button>
+             <!-- </div> -->
+             <div class="mdl-layout-spacer"></div>
+            </div> 
+            
+          </div>
+          <!-- For large screens -->
+          <div class="mdl-grid lmu-max-width mdl-layout--large-screen-only">
+            <div class="lmu-card-height mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <!-- <img src="images/more-from-1.png"> -->
+              </div>
+              <!-- <div class="mdl-card__title"> -->
+                 <!-- <h4 class="mdl-card__title-text">Prof. Dr. Andreas Butz</h4> -->
+              <!-- </div> -->
+              <div class="mdl-card__supporting-text mdl-typography--font-light mdl-typography--subhead">
+                  <table style="width:100%">
+                  <tr>
+                    <th class="mdl-typography--subhead" style="width:60%">Prof. Dr. Andreas Butz</th>
+                    <th class="mdl-typography--subhead">Kontakt</th>
+                  </tr>
+                  <tr>
+                    <td class="mdl-typography--font-light mdl-typography--subhead">
+                    Chair for Human-Computer-Interaction
+                    </td>
+                    <td class="mdl-typography--font-light mdl-typography--subhead">
+                    Room: A503 (5th floor)
+                  </td>
+                  </tr>
+                  <tr>
+                    <td class="mdl-typography--font-light mdl-typography--subhead"></td>
+                    <td class="mdl-typography--font-light mdl-typography--subhead">+49-89-2180-4665</td>
+                  </tr>
+                  
+                  </table>
+                  
+              </div>
+              <div class="mdl-card__actions">
+                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                   andreas.butz@ifi.lmu.de
+                   <!-- <i class="material-icons">chevron_right</i> -->
+                 </a>
+              </div>
+            </div>
+            <div class="lmu-card-height mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <!-- <img src="images/more-from-1.png"> -->
+              </div>
+              <!-- <div class="mdl-card__title"> -->
+                 <!-- <h4 class="mdl-card__title-text">Prof. Dr. Andreas Butz</h4> -->
+              <!-- </div> -->
+              <div class="mdl-card__supporting-text mdl-typography--font-light mdl-typography--subhead">
+                  <table style="width:100%">
+                  <tr>
+                    <th class="mdl-typography--subhead" style="width:60%">Blender 3D-Modeling</th>
+                    <th class="mdl-typography--subhead">Info</th>
+                  </tr>
+                  <tr>
+                    <td class="mdl-typography--font-light mdl-typography--subhead">Dr.-Ing. Wolfgang Höhl
+                    </td>
+                    <td class="mdl-typography--font-light mdl-typography--subhead">SS16
+                  </td>
+                  </tr>
+                  <tr>
+                    <td class="mdl-typography--font-light mdl-typography--subhead"></td>
+                    <td class="mdl-typography--font-light mdl-typography--subhead">ECTS credits: 6</td>
+                  </tr>
+                  
+                  </table>
+                  
+              </div>
+              <div class="mdl-card__actions">
+                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                   Website
+                   <!-- <i class="material-icons">chevron_right</i> -->
+                 </a>
+              </div>
+            </div>
+
+            <div class="lmu-card-height mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <!-- <img src="images/more-from-1.png"> -->
+              </div>
+              <!-- <div class="mdl-card__title"> -->
+                 <!-- <h4 class="mdl-card__title-text">Prof. Dr. Andreas Butz</h4> -->
+              <!-- </div> -->
+              <div class="mdl-card__supporting-text mdl-typography--font-light mdl-typography--subhead">
+                  <table style="width:100%">
+                  <tr>
+                    <th class="mdl-typography--subhead" style="width:60%">Periphal Interaction - Exploring the Design Space</th>
+                    <th class="mdl-typography--subhead">Info</th>
+                  </tr>
+                  <tr>
+                    <td class="mdl-typography--font-light mdl-typography--subhead">
+                    Dors Hausen
+                    </td>
+                    <td class="mdl-typography--font-light mdl-typography--subhead">
+                    PhD Thesis
+                  </td>
+                  </tr>
+                  <tr>
+                    <td class="mdl-typography--font-light mdl-typography--subhead"></td>
+                    <td class="mdl-typography--font-light mdl-typography--subhead">Faculty of Mathematics, Computer Science and Statistics</td>
+                  </tr>
+                  
+                  </table>
+                  
+              </div>
+              <div class="mdl-card__actions">
+                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                   Download
+                   <!-- <i class="material-icons">chevron_right</i> -->
+                 </a>
+              </div>
+            </div>
+            
+          </div>
+          
+    <!-- </div> -->
+    
+</div>
+</html>
