@@ -86,12 +86,12 @@ a:visited {
 }
 
 .cell-card h2{
-    color: rgba(0, 148, 64, 1);;
+    color: rgba(0, 148, 64, 1);
     font-size: 22px;
     font-weight: 500;
 }
 .cell-card h4{
-    color: rgba(0, 148, 64, 1);;
+    color: rgba(0, 148, 64, 1);
     font-size: 14px;
     font-weight: 500;
 }
@@ -217,6 +217,9 @@ a:visited {
 .back-to-top {
     text-align: center;
     padding: 30px 0;
+}
+.back-to-top a{
+    color: rgba(0, 148, 64, 1);
 }
 /*Footer*/
 .footer {
