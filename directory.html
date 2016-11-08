@@ -3,9 +3,10 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
 <link rel="stylesheet" href="css/app.css">
-
+<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
 <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
 <!-- Simple header with scrollable tabs. -->
+<body>
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
 
   <header class="mdl-layout__header" id="lmu-medieninfo-top">
@@ -17,7 +18,7 @@
       <!-- </span> -->
       <nav class="mdl-layout--large-screen-only mdl-navigation mdl-typography--body-1-force-preferred-font">
                       <a class="mdl-navigation__link logo-font" href="home.html"><i class="material-icons">home</i> Home</a>
-                      <a class="mdl-navigation__link logo-font" href=""><i class="material-icons">access_time</i> Past visited</a>
+                      <a class="mdl-navigation__link logo-font" onclick="openNav()" href="javascript:void(0)"><i class="material-icons">access_time</i> Past visited</a>
                       <a class="mdl-navigation__link logo-font" href=""><i class="material-icons">list</i> A - Z Directory</a>
                       <a class="mdl-navigation__link logo-font" href=""><i class="material-icons">remove_red_eye</i> I'm looking for</a>
                       <a class="mdl-navigation__link logo-font" href=""><i class="material-icons">search</i> Search</a>
@@ -72,7 +73,7 @@
         <a href="#scroll-tab-5" class="mdl-layout__tab">Z</a>
     </div>
   </header>
-
+  
   <!-- <! For small screens show a drawer -->
   <div class="mdl-layout__drawer mdl-layout--small-screen-only">
         <!-- <span class="mdl-layout-title"> -->
@@ -92,7 +93,7 @@
           <div class="android-drawer-separator"></div>
           <a class="mdl-navigation__link logo-font" href="home.html"><i class="material-icons">home</i> Home</a>
           <div class="android-drawer-separator"></div>
-          <a class="mdl-navigation__link logo-font" href=""><i class="material-icons">access_time</i> Past visited</a>
+          <a class="mdl-navigation__link logo-font" onclick="openNav()" href="javascript:void(0)"><i class="material-icons">access_time</i> Past visited</a>
           <div class="android-drawer-separator"></div>
           <a class="mdl-navigation__link logo-font" href=""><i class="material-icons">list</i> A - Z Directory</a>
           <div class="android-drawer-separator"></div>
@@ -109,7 +110,7 @@
   <!-- Right align the drawer button -->
   <style>
   </style>
-  <main class="mdl-layout__content">
+ <main class="mdl-layout__content">
     <section class="mdl-layout__tab-panel is-active" id="scroll-tab-1">
       <div class="page-content"><!-- Your content goes here --></div>
     </section>
@@ -132,6 +133,7 @@
   <!-- <div class=""> -->
           <!-- <div class="mdl-typography--display-1-color-contrast"></div> -->
           <!-- For small screens -->
+  <main>
           <div class="mdl-grid lmu-max-width mdl-layout--small-screen-only">
             <div class="lmu-card-height mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
               <div class="mdl-card__media">
@@ -205,15 +207,7 @@
                  </a>
               </div>
             </div>
-            <div class="mdl-grid">
-             <div class="mdl-layout-spacer"></div>
-             <!-- <div class="mdl-cell mdl-cell--4-col"> -->
-                <button class="up-button mdl-cell--stretch mdl-cell--middle mdl-button mdl-js-button mdl-button--fab">
-                  <a href="#lmu-medieninfo-top"><i class="material-icons">keyboard_arrow_up</i></a>
-                </button>
-             <!-- </div> -->
-             <div class="mdl-layout-spacer"></div>
-            </div>
+            
 
           </div>
           <!-- For large screens -->
@@ -326,9 +320,45 @@
               </div>
             </div>
 
+
           </div>
-
+          <!-- <body> -->
+          <!-- <div class="footer mdl-cell mdl-cell--12-col"> -->
+          <div class="back-to-top mdl-cell mdl-cell--12-col">
+          <div class="cell-content">
+            <button class="mdl-cell--stretch mdl-cell--middle mdl-button mdl-js-button mdl-button--fab">
+              <a href="#lmu-medieninfo-top"><i class="material-icons">keyboard_arrow_up</i></a>
+            </button>
+          </div>
+          </div>
+          <div class="footer mdl-cell mdl-cell--12-col">
+            <div class="footer-upper color-dark-green">
+              <h5 class="lmu-footer">Institut für Informatik <br> LFE Medieninformatik </h5>
+              <p class="lmu-footer">
+                Amalienstraße 17 <br>
+                Vordergebäude, 5. Stock, Zimmer 507 <br>
+                80333 München <br>
+                Germany
+              </p>
+              <div class="social-media-icons">
+                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                <i class="fa fa-youtube-square" aria-hidden="true"></i>
+                <i class="fa fa-wordpress" aria-hidden="true"></i>
+                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="footer-lower color-dark-grey">
+              <a href="#">Impressum</a>
+              <a href="#">Privacy Agreement</a>
+            </div>
+          </div>
+          <!-- </body> -->
     <!-- </div> -->
+  </main>
+  </div>
+</body>
 
-</div>
+
+<script src="js/app.js"></script>
 </html>
