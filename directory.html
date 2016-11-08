@@ -2,6 +2,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
+<link rel="stylesheet" href="css/app.css">
+
 <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
 <!-- Simple header with scrollable tabs. -->
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
@@ -38,9 +40,9 @@
             </label>
     </p>
   </div>
-    
+
     <!-- Tabs -->
-    <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+    <div class="mdl-layout__tab-bar mdl-js-ripple-effect ">
       <a href="#scroll-tab-1" class="mdl-layout__tab">A</a>
         <a href="#scroll-tab-2" class="mdl-layout__tab is-active">B</a>
         <a href="#scroll-tab-3" class="mdl-layout__tab">C</a>
@@ -69,13 +71,13 @@
         <a href="#scroll-tab-5" class="mdl-layout__tab">Z</a>
     </div>
   </header>
-  
+
   <!-- <! For small screens show a drawer -->
   <div class="mdl-layout__drawer mdl-layout--small-screen-only">
         <!-- <span class="mdl-layout-title"> -->
           <!-- <img class="android-logo-image" src="images/android-logo-white.png"> -->
         <!-- </span> -->
-          <nav class="mdl-navigation"> 
+          <nav class="mdl-navigation">
 
           <!-- <div class="mdl-grid mdl-cell--stretch mdl-cell--right"> -->
           <!-- <div class="mdl-layout-spacer"></div> -->
@@ -99,71 +101,10 @@
           <a class="mdl-navigation__link" href="">Current lectures</a>
           <a class="mdl-navigation__link" href="">Current resources</a>
         </nav>
-      
+
   </div>
   <!-- Right align the drawer button -->
   <style>
-    .mdl-layout__drawer-button, .mdl-layout__drawer, .close-window-button{
-        left: initial;
-        right: 0;
-    }
-
-    .mdl-layout__drawer{    
-        transform:translateX(250px);
-
-
-    }
-    .lmu-max-width {
-    max-width: 1100px;
-    margin: auto;
-
-}
-    .mdl-card__title-text{
-    font-size: 80%;
-
-}
-    .mdl-typography--subhead{
-      font-size: 90%;
-    }
-
-    .mdl-checkbox__label
-    {
-      font-size: 90%;
-    }
-
-    .mdl-layout-title
-    {
-      font-size: 150%;
-    }
-
-    .mdl-layout__tab
-    {
-      font-size: 80%;
-    }
-
-    .mdl-button
-    {
-      font-size: 65%;
-    }
-
-    .mdl-navigation__link
-    {
-      font-size: 90%;
-    }
-
-    th{
-      text-align: left;
-    }
-
-    .mdl-layout__header-row{
-      padding-left: 0px;
-      padding-right: 0px;
-    }
-
-    .mdl-layout__header{
-      padding-left: 20px;
-      padding-right: 20px;
-    }
   </style>
   <main class="mdl-layout__content">
     <section class="mdl-layout__tab-panel is-active" id="scroll-tab-1">
@@ -184,7 +125,7 @@
     <section class="mdl-layout__tab-panel" id="scroll-tab-6">
       <div class="page-content"><!-- Your content goes here --></div>
     </section>
-  </main> 
+  </main>
   <!-- <div class=""> -->
           <!-- <div class="mdl-typography--display-1-color-contrast"></div> -->
           <!-- For small screens -->
@@ -264,13 +205,13 @@
             <div class="mdl-grid">
              <div class="mdl-layout-spacer"></div>
              <!-- <div class="mdl-cell mdl-cell--4-col"> -->
-                <button class="mdl-cell--stretch mdl-cell--middle mdl-button mdl-js-button mdl-button--fab">
+                <button class="up-button mdl-cell--stretch mdl-cell--middle mdl-button mdl-js-button mdl-button--fab">
                   <a href="#lmu-medieninfo-top"><i class="material-icons">keyboard_arrow_up</i></a>
                 </button>
              <!-- </div> -->
              <div class="mdl-layout-spacer"></div>
-            </div> 
-            
+            </div>
+
           </div>
           <!-- For large screens -->
           <div class="mdl-grid lmu-max-width mdl-layout--large-screen-only">
@@ -299,9 +240,9 @@
                     <td class="mdl-typography--font-light mdl-typography--subhead"></td>
                     <td class="mdl-typography--font-light mdl-typography--subhead">+49-89-2180-4665</td>
                   </tr>
-                  
+
                   </table>
-                  
+
               </div>
               <div class="mdl-card__actions">
                  <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
@@ -333,9 +274,9 @@
                     <td class="mdl-typography--font-light mdl-typography--subhead"></td>
                     <td class="mdl-typography--font-light mdl-typography--subhead">ECTS credits: 6</td>
                   </tr>
-                  
+
                   </table>
-                  
+
               </div>
               <div class="mdl-card__actions">
                  <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
@@ -370,9 +311,9 @@
                     <td class="mdl-typography--font-light mdl-typography--subhead"></td>
                     <td class="mdl-typography--font-light mdl-typography--subhead">Faculty of Mathematics, Computer Science and Statistics</td>
                   </tr>
-                  
+
                   </table>
-                  
+
               </div>
               <div class="mdl-card__actions">
                  <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
@@ -381,10 +322,10 @@
                  </a>
               </div>
             </div>
-            
+
           </div>
-          
+
     <!-- </div> -->
-    
+
 </div>
 </html>

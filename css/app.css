@@ -274,6 +274,7 @@ a:visited {
 }
 .side-menu .closebtn {
     position: absolute;
+    color: rgba(0, 148, 64, 1);
     top: 0;
     right: 15px;
     font-size: 25px;
@@ -309,3 +310,91 @@ a:visited {
 
 
 /*-------------------- Directory --------------------*/
+
+
+.mdl-layout__drawer-button, .mdl-layout__drawer, .close-window-button{
+    left: initial;
+    right: 0;
+}
+
+.mdl-layout__drawer{
+    transform:translateX(250px);
+}
+
+/*Color Styles*/
+.mdl-layout__header,
+.mdl-layout__tab-bar,
+.mdl-layout__tab-bar-button {
+    background-color: rgba(0, 148, 64, 1);
+}
+.mdl-checkbox checkbox{
+    color: #fff;
+    background-color: #fff;
+}
+.mdl-layout.is-upgraded .mdl-layout__tab.is-active::after {
+    background-color: #fff;
+}
+.mdl-card__title h4{
+    font-size: 18px;
+    color: rgba(0, 148, 64, 1);
+    font-weight: bold;
+}
+.mdl-card__actins a{
+    color: rgba(0, 148, 64, 1);
+}
+.up-button a{
+    color: rgba(0, 148, 64, 1);
+}
+
+
+.lmu-max-width {
+max-width: 1100px;
+margin: auto;
+
+}
+.mdl-card__title-text{
+font-size: 80%;
+
+}
+.mdl-typography--subhead{
+  font-size: 90%;
+}
+
+.mdl-checkbox__label
+{
+  font-size: 90%;
+}
+
+.mdl-layout-title
+{
+  font-size: 150%;
+}
+
+.mdl-layout__tab
+{
+  font-size: 80%;
+}
+
+.mdl-button
+{
+  font-size: 65%;
+}
+
+.mdl-navigation__link
+{
+  font-size: 90%;
+}
+
+th{
+  text-align: left;
+}
+
+.mdl-layout__header-row{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.mdl-layout__header{
+  padding-left: 20px;
+  padding-right: 20px;
+}
