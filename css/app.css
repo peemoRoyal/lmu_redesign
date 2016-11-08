@@ -308,6 +308,10 @@ a:visited {
     font-size: 16px;
     line-height: 17px;
 }
+.side-menu .past-visited-card .title a{
+    text-decoration: none;
+    line-height: 17px;
+}
 .side-menu .pin-status{
 }
 
